@@ -6,6 +6,7 @@ class Welcome extends Application {
 
 	public function index()
 	{
+		/*
 		$result = '';
 		$oddrow = true;
 		foreach ($this->categories->all() as $category)
@@ -19,6 +20,9 @@ class Welcome extends Application {
 			$oddrow = ! $oddrow;
 		}
 		$this->data['content'] = $result;
+		$this->render();
+		*/
+		$this->data['pagebody'] = 'welcome_message';
 		$this->render();
 	}
 
